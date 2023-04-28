@@ -1,0 +1,11 @@
+.add-deal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+  label {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+  }
+}

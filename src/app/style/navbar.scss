@@ -1,0 +1,31 @@
+.navbar {
+  // border: 5px solid green;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 15px;
+  background: #394867;
+  color: white;
+  ul {
+    display: flex;
+    left: 0;
+    top: 45px;
+    @media (max-width: 600px) {
+      width: 100vw;
+      align-items: center;
+      position: absolute;
+      flex-direction: column;
+      background: #394867;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      @media (min-width: 600px) {
+        margin: 0 10px;
+      }
+      @media (max-width: 600px) {
+        margin: 5px 0;
+      }
+    }
+  }
+}
