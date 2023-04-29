@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import "../style/navbar.scss";
+import "../../style/navbar.scss";
 import NavBtn from "./NavBtn";
 import Link from "next/link";
 const Navbar = () => {

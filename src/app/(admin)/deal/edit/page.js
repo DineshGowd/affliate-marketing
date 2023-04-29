@@ -1,6 +1,6 @@
 "use client";
-import '../../style/adddeal.scss'
-import DealForm from "@/app/components/DealForm";
+import DealForm from '@/app/(user)/components/DealForm';
+import '../../../style/adddeal.scss'
 
 const EditDeal = () => {
 

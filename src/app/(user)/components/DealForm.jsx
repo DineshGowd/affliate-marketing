@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "../style/adddeal.scss";
+import "../../style/adddeal.scss";
 
 const DealForm = ({onSubmit }) => {
 //   console.log(params);

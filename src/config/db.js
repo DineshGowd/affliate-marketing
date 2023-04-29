@@ -5,7 +5,7 @@ export const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'root123',
-  // database: 'blog'
+  database: 'affiliatemarket'
 });
 
 connection.query(`CREATE DATABASE IF NOT EXISTS affiliatemarket`);

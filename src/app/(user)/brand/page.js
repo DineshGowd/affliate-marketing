@@ -4,7 +4,7 @@ export const metadata = {
 
 const Brand = () => {
   return (
-    <div>Brand</div>
+    <div>Brand Page</div>
   )
 }
 
