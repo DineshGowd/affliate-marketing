@@ -4,7 +4,7 @@ import React from "react";
 const fetchTodos = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
   const todos = await res.json();
-  console.log("This is the todos:", todos);
+  // console.log("This is the todos:", todos);
   return todos;
 };
 const TodoList = async () => {

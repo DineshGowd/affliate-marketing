@@ -29,12 +29,12 @@ const TodoPage = async ({ params: { todoId } }) => {
 
 export default TodoPage;
 
-export async function generateStaticParams() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
-  const todos = await res.json();
+// export async function generateStaticParams() {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
+//   const todos = await res.json();
 
-  const trimTodos = todos.splice(0, 20);
-  return trimTodos.map((todo) => ({
-    todoId: todo.id.toString(),
-  }));
-}
+//   const trimTodos = todos.splice(0, 20);
+//   return trimTodos.map((todo) => ({
+//     todoId: todo.id.toString(),
+//   }));
+// }

@@ -15,7 +15,6 @@ connection.query('CREATE TABLE IF NOT EXISTS deals (`id` INT NOT NULL AUTO_INCRE
 connection.connect((err) => {
   if (err) console.log(err);
   console.log('sql connected...');
-
 })
 
 

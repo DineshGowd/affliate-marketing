@@ -11,8 +11,8 @@ export async function GET(request) {
     .catch(console.log)
   // .then(() => connection.end());'
   // console.log(data)
-
-  return NextResponse.json({ data })
+  if (data)
+    return NextResponse.json({ data })
 }
 
 export async function POST(request) {

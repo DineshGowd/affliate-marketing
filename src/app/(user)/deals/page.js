@@ -7,18 +7,24 @@ export const metadata = {
 const getData = async () => {
   const response = await fetch('http://localhost:3000/api/hello', {
     next: { revalidate: 2 },
-    cache:'no-cache'
-  });
-  const deals = await response.json();
-  return deals;
-};  
+    cache: 'no-cache'
+  }).catch(() => []);
+  if (response.length>0) {
+    const deals = await response.json();
+    if (deals) {
+      return deals;
+    } else {
+      return []
+    }
+  }
+};
 
 const Deals = async () => {
   const deals = await getData();
   console.log(deals);
   return (
     <div className="dealList">
-      <DealCard deals={deals.data} />
+      <DealCard deals={deals?.data} />
     </div>
   )
 }

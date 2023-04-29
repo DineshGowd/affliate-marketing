@@ -9,7 +9,7 @@ import Link from "next/link";
 const DealCard = ({ deals, deleteIcon = false }) => {
   return (
     <div className="dealcard-container">
-      {deals.map((deal) => (
+      {deals?.map((deal) => (
         <div key={deal.id} className="dealcard">
           <div className="dealcard-header">
             <span className="dealcard-btn">{deal.category}</span>
