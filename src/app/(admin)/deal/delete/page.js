@@ -3,14 +3,10 @@ import '../../../style/adddeal.scss'
 const getData = async () => {
   const response = await fetch('http://localhost:3000/api/hello', {
     next: { revalidate: 60 },
-  }).catch(() => []);
-  if (response.length > 0) {
+  }).catch(() => false);
+  if (response) {
     const deals = await response.json();
-    if (deals) {
       return deals;
-    } else {
-      return []
-    }
   }
 };
 

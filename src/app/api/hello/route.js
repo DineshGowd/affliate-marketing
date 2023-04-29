@@ -5,14 +5,13 @@ export async function GET(request) {
   console.log(request);
   const data = await connection.promise().query('SELECT * FROM deals')
     .then(([rows, fields]) => {
-      // console.log(rows)
+      console.log(rows)
       return rows;
     })
     .catch(console.log)
   // .then(() => connection.end());'
   // console.log(data)
-  if (data)
-    return NextResponse.json({ data })
+  return NextResponse.json({ data })
 }
 
 export async function POST(request) {
